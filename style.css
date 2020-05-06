@@ -1,0 +1,23 @@
+/* body {
+    display: flex;
+} */
+
+.container {
+    display: flex;
+}
+
+div{
+    display: flex;
+    border: 2px solid blue;
+}
+
+H1{
+    border: 2px solid blue;
+}
+
+H2 {
+    border: 2px solid blue;
+}
+
+
+}

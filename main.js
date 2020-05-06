@@ -21,13 +21,26 @@ fetch ('https://api.github.com/users/scarter13')
 .then (function (data) {
     console.log (data)
     console.log (data.name)
-})
-// let targetBodyElement = document.querySelector ("body")
-// let headerElement = document.createElement ("h1")
-// headerElement.innerText = (data.name)
-// console.log (headerElement)
-// targetBodyElement.appendChild(headerElement)
 
+let targetBodyElement = document.querySelector ("body")
+let headerElement = document.createElement ("h1")
+headerElement.innerText = (data.name)
+console.log (headerElement)
+targetBodyElement.appendChild(headerElement)
+
+let leftElement = document.createElement ("div")
+let leftHeader = document.createElement ("h2")
+leftHeader.innerText = ("The Basics")
+leftElement.appendChild(leftHeader)
+let nameEl = document.createElement ("p")
+
+let nameEl = document.createElement ("p")
+
+let nameEl = document.createElement ("p")
+
+targetBodyElement.appendChild(leftElement)
+
+})
 
 // let headerElement = document.querySelector("h1")
 
