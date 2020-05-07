@@ -48,11 +48,22 @@ let leftElement = document.createElement ("div")
 let rightElement = document.createElement ("div")
     let rightHeader = document.createElement ("h2")
         rightHeader.innerText = ("The Story")
+        rightElement.appendChild(rightHeader)
+
+    let storyEl = document.createElement ("p")
+        storyEl.innerText = (data.bio)
+        rightElement.appendChild(storyEl)
+
+let imageEl = document.createElement ("div")
+    imageEl.innerHTML = `<img src=${data.avatar_url}>`
+    console.log (imageEl)
 
 
 
 
 targetBodyElement.appendChild(leftElement)
+targetBodyElement.appendChild(rightElement)
+targetBodyElement.appendChild(imageEl)
 
 })
 
