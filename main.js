@@ -23,20 +23,34 @@ fetch ('https://api.github.com/users/scarter13')
     console.log (data.name)
 
 let targetBodyElement = document.querySelector ("body")
-let headerElement = document.createElement ("h1")
-headerElement.innerText = (data.name)
-console.log (headerElement)
-targetBodyElement.appendChild(headerElement)
+    let headerElement = document.createElement ("h1")
+        headerElement.innerText = (data.name)
+        // console.log (headerElement)
+        targetBodyElement.appendChild(headerElement)
 
 let leftElement = document.createElement ("div")
-let leftHeader = document.createElement ("h2")
-leftHeader.innerText = ("The Basics")
-leftElement.appendChild(leftHeader)
-let nameEl = document.createElement ("p")
+    let leftHeader = document.createElement ("h2")
+        leftHeader.innerText = ("The Basics")
+        leftElement.appendChild(leftHeader)
+        
+    let nameEl = document.createElement ("p")
+        nameEl.innerText = ("Name " + data.name)
+        leftElement.appendChild(nameEl)
 
-let nameEl = document.createElement ("p")
+    let gitUrlEl = document.createElement ("p")
+        gitUrlEl.innerText = ("GitHub URL " + data.login)
+        leftElement.appendChild(gitUrlEl)   
+        
+    let companyEl = document.createElement ("p")
+        companyEl.innerText = ("Company " + data.company)
+        leftElement.appendChild(companyEl)
 
-let nameEl = document.createElement ("p")
+let rightElement = document.createElement ("div")
+    let rightHeader = document.createElement ("h2")
+        rightHeader.innerText = ("The Story")
+
+
+
 
 targetBodyElement.appendChild(leftElement)
 
