@@ -2,16 +2,36 @@
     display: flex;
 } */
 
-.container {
-    display: flex;
-}
 
-div{
+
+.innerboxL {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    inline-size: 40%;
+    text-indent: 40px;
     border: 2px solid blue;
 }
+.innerboxR {
+    display: flex;
+    flex-direction: column;
+    inline-size: 35%;
+    border: 2px solid blue;
+}
+.innerboxI {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    inline-size: 25%;
+    border: 2px solid blue;
+}
+
+
+
+.container {
+    display: flex;
+    height: 250px;
+}
+
 
 H1{
     border: 2px solid blue;
@@ -21,5 +41,10 @@ H2 {
     border: 2px solid blue;
 }
 
-
+p {
+    margin: 0px;
+}
+img {
+    max-width: 60%;
+    max-height: 60%;
 }

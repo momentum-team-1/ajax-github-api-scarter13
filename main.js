@@ -22,6 +22,8 @@ fetch ('https://api.github.com/users/scarter13')
     console.log (data)
     console.log (data.name)
 
+
+
 let targetBodyElement = document.querySelector ("body")
     let headerElement = document.createElement ("h1")
         headerElement.innerText = (data.name)
@@ -54,16 +56,26 @@ let rightElement = document.createElement ("div")
         storyEl.innerText = (data.bio)
         rightElement.appendChild(storyEl)
 
-let imageEl = document.createElement ("div")
+let imageDiv = document.createElement ("div")
+    let imageEl = document.createElement ("div")
     imageEl.innerHTML = `<img src=${data.avatar_url}>`
-    console.log (imageEl)
+    // console.log (imageEl)
+    imageDiv.appendChild(imageEl)
 
 
 
+let containerElement = document.createElement ("div")
+containerElement.appendChild(leftElement)
+containerElement.appendChild(rightElement)
+containerElement.appendChild(imageEl)
+targetBodyElement.appendChild(containerElement)
 
-targetBodyElement.appendChild(leftElement)
-targetBodyElement.appendChild(rightElement)
-targetBodyElement.appendChild(imageEl)
+
+containerElement.classList.add("container")
+leftElement.classList.add("innerboxL")
+rightElement.classList.add("innerboxR")
+imageEl.classList.add("innerboxI")
+
 
 })
 
