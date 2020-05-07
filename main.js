@@ -75,6 +75,7 @@ containerElement.classList.add("container")
 leftElement.classList.add("innerboxL")
 rightElement.classList.add("innerboxR")
 imageEl.classList.add("innerboxI")
+storyEl.classList.add("vertLine")
 
 
 })

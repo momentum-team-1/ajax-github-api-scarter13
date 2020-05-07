@@ -9,20 +9,20 @@
     flex-direction: column;
     inline-size: 40%;
     text-indent: 40px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .innerboxR {
     display: flex;
     flex-direction: column;
     inline-size: 35%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .innerboxI {
     display: flex;
     flex-direction: column;
     justify-content: center;
     inline-size: 25%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 
@@ -30,15 +30,22 @@
 .container {
     display: flex;
     height: 250px;
+    background-color: gainsboro;
 }
 
 
 H1{
     border: 2px solid blue;
+    text-align: center;
+    color: gainsboro;
+    background-color: black;
+    margin: 0px;
+    font-family: copperplate;
+    font-size: 4rem;
 }
 
 H2 {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 p {
@@ -47,4 +54,10 @@ p {
 img {
     max-width: 60%;
     max-height: 60%;
+    border-radius: 50%;
+}
+
+.vertline {
+    border-left: 6px black;
+    height: 60px;
 }
